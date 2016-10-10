@@ -7,6 +7,8 @@
 # Pull base image.
 FROM ubuntu
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install Nginx.
 RUN \
   add-apt-repository -y ppa:nginx/stable && \
